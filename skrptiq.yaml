@@ -1,0 +1,47 @@
+# --- Identity ---
+id: "dbb6aad1-bb81-4a90-9483-8c173d919b56"
+name: "morning-briefing"
+display_name: "Morning Briefing"
+description: "Pulls today's emails and calendar via MCP, triages by urgency, and produces a personalised day-ahead briefing"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/morning-briefing"
+
+# --- Discovery (Hub) ---
+category: "shared"
+tags:
+  - "mcp"
+  - "gmail"
+  - "calendar"
+  - "productivity"
+  - "daily"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+    - "gmail-mcp"
+    - "google-calendar-mcp"
+  permissions:
+    - "network:googleapis.com"
+    - "network:console.cloud.google.com"
+  data_handling:
+    - "pii"
+
+# --- Contents ---
+contents:
+  skills: 5
+  prompts: 5
+  workflows: 1
+  services: 3
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 14
