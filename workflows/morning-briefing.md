@@ -43,12 +43,20 @@ execution:
   - skill: "urgency-triage"
     step_type: "synthesis"
     prompt: "triage-urgency"
+    context:
+      urgency_sensitivity: ""
   - skill: "briefing-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-briefing"
+    context:
+      voice_profile: ""
+      briefing_detail: ""
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-briefing"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
