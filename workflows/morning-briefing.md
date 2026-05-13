@@ -44,19 +44,19 @@ execution:
     step_type: "synthesis"
     prompt: "triage-urgency"
     context:
-      urgency_sensitivity: ""
+      urgency_sensitivity: "Standard"
   - skill: "briefing-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-briefing"
     context:
-      voice_profile: ""
-      briefing_detail: ""
+      voice_profile: "Neutral professional tone"
+      briefing_detail: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-briefing"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
