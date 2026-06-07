@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "dbb6aad1-bb81-4a90-9483-8c173d919b56"
+id: "3b8b173d-5b5e-4bb5-b4ea-e6fa5b193d43"
 name: "morning-briefing"
 display_name: "Morning Briefing"
 description: "Pulls today's emails and calendar via MCP, triages by urgency, and produces a personalised day-ahead briefing"
-version: "1.0.11"
+version: "1.0.12"
 engine: ">=0.1.0"
 
 # --- Attribution ---
