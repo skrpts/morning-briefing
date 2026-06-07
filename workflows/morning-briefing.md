@@ -9,7 +9,7 @@ connections:
     type: uses
   - target: calendar-fetch
     type: uses
-  - target: urgency-triage
+  - target: triage-email-urgency
     type: uses
   - target: briefing-synthesis
     type: uses
@@ -29,7 +29,7 @@ output_step: "language-polish"
 composite_steps:
   - "email-fetch"
   - "calendar-fetch"
-  - "urgency-triage"
+  - "triage-email-urgency"
   - "briefing-synthesis"
   - "language-polish"
 execution:
@@ -40,9 +40,9 @@ execution:
     - skill: "calendar-fetch"
       step_type: "generation"
       prompt: "fetch-calendar"
-  - skill: "urgency-triage"
+  - skill: "triage-email-urgency"
     step_type: "synthesis"
-    prompt: "triage-urgency"
+    prompt: "triage-email-urgency"
     context:
       urgency_sensitivity: "Standard"
   - skill: "briefing-synthesis"
