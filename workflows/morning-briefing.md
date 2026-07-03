@@ -37,23 +37,28 @@ execution:
     - skill: "email-fetch"
       step_type: "generation"
       prompt: "fetch-emails"
+      output: { name: "emails", type: "text" }
     - skill: "calendar-fetch"
       step_type: "generation"
       prompt: "fetch-calendar"
+      output: { name: "calendar", type: "text" }
   - skill: "triage-email-urgency"
     step_type: "synthesis"
     prompt: "triage-email-urgency"
+    output: { name: "urgency_triage", type: "text" }
     context:
       urgency_sensitivity: "Standard"
   - skill: "briefing-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-briefing"
+    output: { name: "briefing", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       briefing_detail: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-briefing"
+    output: { name: "polished_briefing", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
