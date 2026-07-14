@@ -3,7 +3,7 @@ id: "3b8b173d-5b5e-4bb5-b4ea-e6fa5b193d43"
 name: "morning-briefing"
 display_name: "Morning Briefing"
 description: "Pulls today's emails and calendar via MCP, triages by urgency, and produces a personalised day-ahead briefing"
-version: "1.0.13"
+version: "1.0.14"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -37,6 +37,14 @@ dependencies:
     name: "triage-email-urgency"
     version: 1.0.1
     checksum: "sha256:311d32a1b5d23ba2f2e935a7004023824c232ca7e332461bffeffc3f64b5511d"
+  - id: "2b9a3d32-a352-46ab-9241-96b256ca4237"
+    name: "gmail-mcp"
+    version: 1.0.0
+    checksum: "sha256:7d4fd65094639e5649cec9326f1327a299363387e32a27ec20d2bd24acd3d39f"
+  - id: "083e325f-d27f-46a8-a947-92e9345a60bb"
+    name: "google-calendar-mcp"
+    version: 1.0.0
+    checksum: "sha256:8302ab9047e3cc3fb8d2b1b5675e0fb0a8ce195ab1aae23cfac819b5d45240ff"
 
 requires:
   services:
@@ -51,25 +59,25 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 3
+  skills: 4
   prompts: 4
   workflows: 1
-  services: 2
+  services: 0
   sources: 0
   documents: 0
   assets: 0
-  total: 10
+  total: 9
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T15:57:17.933Z"
+  scanned_at: "2026-07-14T11:42:47.205Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
   detected:
-    services: ["llm-service"]
-    permissions: ["network:console.cloud.google.com"]
-    data_handling: ["pii"]
+    services: ["llm-service", "google-calendar-mcp", "gmail-mcp"]
+    permissions: []
+    data_handling: []
   undeclared: []
   warnings: []
   report_url: "https://hub.skrptiq.ai/skrpts/morning-briefing/security"

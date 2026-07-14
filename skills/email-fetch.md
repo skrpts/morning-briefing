@@ -26,7 +26,7 @@ Fetches recent emails from Gmail using the Gmail MCP server. Searches the inbox 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
 | `{{input.lookback_hours}}` | No | Hours of email history. Default: 12. | `24` |
-| `{{input.focus_labels}}` | No | Gmail labels to prioritise. | `INBOX, IMPORTANT` |
+| `{{input.focus_labels}}` | No | Gmail labels to prioritize. | `INBOX, IMPORTANT` |
 
 ## Outputs
 

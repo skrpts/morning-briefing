@@ -9,7 +9,7 @@ connections:
     type: uses
   - target: calendar-fetch
     type: uses
-  - target: triage-email-urgency
+  - target: email-triage
     type: uses
   - target: briefing-synthesis
     type: uses
@@ -29,7 +29,7 @@ output_step: "language-polish"
 composite_steps:
   - "email-fetch"
   - "calendar-fetch"
-  - "triage-email-urgency"
+  - "email-triage"
   - "briefing-synthesis"
   - "language-polish"
 execution:
@@ -42,7 +42,7 @@ execution:
       step_type: "generation"
       prompt: "fetch-calendar"
       output: { name: "calendar", type: "text" }
-  - skill: "triage-email-urgency"
+  - skill: "email-triage"
     step_type: "synthesis"
     prompt: "triage-email-urgency"
     output: { name: "urgency_triage", type: "text" }
@@ -103,7 +103,7 @@ Final cleanup: spelling, grammar, clarity, and Voice Profile alignment. Uses Bri
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
 | `{{input.lookback_hours}}` | No | Hours of email history. Default: 12. | `24` |
-| `{{input.focus_labels}}` | No | Gmail labels to prioritise. | `INBOX, IMPORTANT` |
+| `{{input.focus_labels}}` | No | Gmail labels to prioritize. | `INBOX, IMPORTANT` |
 
 ## Outputs
 

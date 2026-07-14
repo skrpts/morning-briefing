@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: synthesise-briefing
-title: Synthesise Briefing
+title: Synthesize Briefing
 description: "Combines triaged emails and calendar events into a morning briefing"
 tags: [Production, Email, Calendar]
 connections:

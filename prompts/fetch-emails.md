@@ -13,7 +13,7 @@ inputs:
     type: text
   focus_labels:
     label: "Focus Labels"
-    description: "Gmail labels to prioritise (comma-separated)"
+    description: "Gmail labels to prioritize (comma-separated)"
     example: "INBOX, IMPORTANT"
     required: false
     type: text

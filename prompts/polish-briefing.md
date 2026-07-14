@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Applies final language polish to the synthesised morning briefing.
+Applies final language polish to the synthesized morning briefing.
 
 ## Voice Profile
 
